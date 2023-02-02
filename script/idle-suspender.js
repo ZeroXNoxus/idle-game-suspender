@@ -3,7 +3,7 @@ function idleChecker(){
     let timeoutLimit = 30;
     let playerCount = game.users.filter(u => u.active).length;
     timeoutLimit = eval(timeoutLimit * 60000);
-    if(playerCount = 1 && idleTime > timeoutLimit){ suspend(); }
+    if(playerCount == 1 && idleTime > timeoutLimit){ suspend(); }
 };
 
 function lastActivityTimestamp(){ localStorage.setItem('last-active-timestamp', Date.now()); };
