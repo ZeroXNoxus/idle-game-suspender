@@ -1,0 +1,24 @@
+{
+    "id": "idle-game-suspender",
+    "title": "Idle Game Suspender",
+    "description": "A module for FoundryVTT to suspend running games with an inactive DM and no other players connected.",
+    "authors": [
+      {
+      "name": "ZeroXNoxus"
+      }
+      ],
+    "version": "1.0.0",
+    "compatibility": {
+      "minimum": "10",
+      "verified": "10"
+    },
+    "scripts": [
+      "/script/idle-suspender.js"
+    ],
+    "manifest": "https://github.com/ZeroXNoxus/idle-game-suspender/releases/download/latest/module.json",
+    "url": "https://github.com/ZeroXNoxus/idle-game-suspender",
+    "download": "https://github.com/ZeroXNoxus/idle-game-suspender/archive/refs/tags/latest.zip",
+    "readme": "https://github.com/ZeroXNoxus/idle-game-suspender/blob/latest/README.md",
+    "bugs": "https://github.com/ZeroXNoxus/idle-game-suspender/issues",
+    "changelog": "https://github.com/ZeroXNoxus/idle-game-suspender/releases"
+  }
