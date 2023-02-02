@@ -9,8 +9,11 @@ function idleChecker(){
 function lastActivityTimestamp(){ localStorage.setItem('last-active-timestamp', Date.now()); };
 function suspend(){ $('button[data-action="setup"]').click(); };
 
+Hooks.on('renderApplication', () => {
+    lastActivityTimestamp();
+});
+
 Hooks.on('init', () => {
-    Hooks.on('renderApplication', lastActivityTimestamp());
     setInterval(idleChecker(), 60000);
     lastActivityTimestamp();
     idleChecker();
