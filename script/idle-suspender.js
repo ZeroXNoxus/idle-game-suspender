@@ -14,7 +14,7 @@ Hooks.on('renderApplication', () => {
 });
 
 Hooks.on('init', () => {
-    setInterval(idleChecker(), 60000);
+    setInterval(idleChecker, 60000);
     lastActivityTimestamp();
     idleChecker();
 });
