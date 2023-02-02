@@ -15,8 +15,8 @@ function generateSettings(){
         config: true,
         type: Number,
         default: 30,
-      });
- }
+    });
+}
 function suspend(){ $('button[data-action="setup"]').click(); };
 
 Hooks.on('renderApplication', () => {
